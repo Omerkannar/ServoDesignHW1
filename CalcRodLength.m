@@ -3,6 +3,6 @@ function [Length, theta] = CalcRodLength(x)
 %   Detailed explanation goes here
 NominalLength = 1.5; %[m]
 Length = sqrt(NominalLength^2 + x.^2);
-theta = abs(asin(x / NominalLength));
+theta = asin(x / NominalLength);
 end
 
